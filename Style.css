@@ -1,0 +1,139 @@
+body {
+  background-image: url("./imagens/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  #header {
+    height: 120px;
+  }
+
+  #logotipo {
+    max-width: 40%;
+  }
+
+  .conteudo {
+    margin: 50px 20px;
+    text-align: left;
+    color: white;
+  }
+
+  .footer {
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer .dados,
+  .footer .endereço {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+    height: 100px;
+  }
+
+  #logotipo {
+    max-width: 60%;
+  }
+
+  .conteudo {
+    margin: 20px 10px;
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 15px;
+  }
+
+  .footer h2 {
+    font-size: 16px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: #333;
+}
+
+#logotipo {
+  margin-top: 10px;
+  max-width: 30%;
+  height: auto;
+}
+.conteudo {
+  text-align: center;
+  margin: 100px;
+}
+#conteudo {
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.2;
+  display: inline-block;
+}
+a:hover {
+  color: orange;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  transition: all ease 0.2s;
+  transform: scale(1.2);
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 43px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 32px;
+}
+display: flex;
+.footer .dados,
+.footer .endereço {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.footer h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: orange;
+  margin-right: 0;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
